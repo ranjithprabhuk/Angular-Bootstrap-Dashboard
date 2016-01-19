@@ -1,0 +1,125 @@
+﻿<!--
+Author: Ranjithprabhu K
+Page Description: Dashboard page
+Date: 05 Jan 2016
+-->
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            KMIT Solutions
+
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+
+        <div class="no-touch">
+
+            <div class="wrap">
+
+                <div class="gallery-box" data-ng-repeat="portfolio in vm.portfolioData">
+                    <div class="boxInner">
+                        <img src="../../../../images/gallery/{{portfolio.image}}.jpg" />
+                        <div class="titleBox">{{portfolio.title}}</div>
+                    </div>
+                </div>
+
+
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/7.jpg" />
+                        <div class="titleBox">Butterfly</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
+                        <div class="titleBox">An old greenhouse</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
+                        <div class="titleBox">Purple wildflowers</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
+                        <div class="titleBox">A birdfeeder</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
+                        <div class="titleBox">Crocus close-up</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/4.jpg" />
+                        <div class="titleBox">The garden shop</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/5.jpg" />
+                        <div class="titleBox">Spring daffodils</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/6.jpg" />
+                        <div class="titleBox">Iris along the path</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
+                        <div class="titleBox">The garden blueprint</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
+                        <div class="titleBox">The patio</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
+                        <div class="titleBox">Bumble bee collecting nectar</div>
+                    </div>
+                </div>
+                <div class="gallery-box">
+                    <div class="boxInner">
+                        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
+                        <div class="titleBox">Winding garden path</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section><!-- /.content -->
+
+<script type="text/javascript">
+    $(function () {
+        // See if this is a touch device
+        if ('ontouchstart' in window) {
+            // Set the correct body class
+            $('.no-touch').removeClass('no-touch').addClass('touch');
+
+            // Add the touch toggle to show text
+            $('div.boxInner img').click(function () {
+                $(this).closest('.boxInner').toggleClass('touchFocus');
+            });
+        }
+    });
+</script>
