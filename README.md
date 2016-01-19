@@ -1,5 +1,8 @@
 # Angular Bootstrap Dashboard
-Angular Bootstrap Dashboard is a web dashboard application based on Bootstrap and AngularJS. All components included in this dashboard template has been developed to bring all the potential of HTML5 and Bootstrap plus a set of new features (JS and CSS) ideal for your next dashboard admin theme or admin web app project. Angular Bootstrap Dashboard can be used in any type of web applications dashboard: Single Page Application (SPA), project management system, ecommerce admin dashboard, CMS, CRM, SAAS, help desk; for personal and business purposes. Angular Bootstrap Dashboard uses ui-router for routing purposes.
+Angular Bootstrap Dashboard is a web dashboard application based on Bootstrap and AngularJS. 
+All components included in this dashboard template has been developed to bring all the potential of HTML5 and Bootstrap plus a set of new features (JS and CSS) ideal for your next dashboard admin theme or admin web app project. 
+Angular Bootstrap Dashboard can be used in any type of web applications dashboard. 
+Angular Bootstrap Dashboard uses ui-router for routing purposes.
 
 ## Get The Dashboard
 
