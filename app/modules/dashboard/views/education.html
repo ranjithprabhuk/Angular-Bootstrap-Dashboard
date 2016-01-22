@@ -39,14 +39,40 @@ Date: 15 Jan 2016
                                 <h4>PPG Institute of Technology, Coimbatore</h4>
                                 <p class="text-bold">Anna University, Chennai</p>
                                 <div class="timeline-footer">
-                                    <a class="btn btn-primary btn-xs">Read more</a>
-                                    <a class="btn btn-danger btn-xs">Delete</a>
+                                    <a class="btn btn-primary btn-xs" data-ng-click="vm.meMarks=!vm.meMarks" data-ng-if="!vm.meMarks">Show Marks</a>
+                                    <a class="btn btn-danger btn-xs" data-ng-click="vm.meMarks=!vm.meMarks" data-ng-if="vm.meMarks">Hide Marks</a>
+   
                                 </div>
                             </div>
                             <div class="col-md-2 col-sm-4 col-xs-12 text-center">
                                 <input type="text" class="knob" data-max="10" value="8.2" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgcolor="#00C0EF">
                                 <div class="knob-label">CGPA: 8.2</div>
-                            </div><!-- ./col -->
+                            </div>
+                        </div>
+                    </li>
+                    <li data-ng-show="vm.meMarks">
+                        <div class="timeline-item">
+                                <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Semester Wise Marks</h3>
+                                        <div class="box-tools pull-right">
+                                            <div class="btn-group">
+                                                <button class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+                                                <ul class="dropdown-menu pull-right" role="menu">
+                                                    <li><a data-ng-click="vm.meAreaChart();">Area Chart</a></li>
+                                                    <li><a data-ng-click="vm.meLineChart();">Line Chart</a></li>
+                                                    <li><a data-ng-click="vm.meBarChart();">Bar Chart</a></li>
+                                                </ul>
+                                            </div>
+                                            <button class="btn btn-danger btn-sm " data-widget="remove" data-ng-click="vm.meMarks=!vm.meMarks"><i class="fa fa-times"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="chart">
+                                            <canvas id="meChart" style="height:350px;"></canvas>
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                     </li>
 
@@ -67,14 +93,39 @@ Date: 15 Jan 2016
                                 <h4>Kovai Kalaimagal College of Arts & Science, Coimbatore</h4>
                                 <p class="text-bold">Bharathiar University, Coimbatore</p>
                                 <div class="timeline-footer">
-                                    <a class="btn btn-primary btn-xs">Read more</a>
-                                    <a class="btn btn-danger btn-xs">Delete</a>
+                                    <a class="btn btn-primary btn-xs" data-ng-click="vm.mscMarks=!vm.mscMarks" data-ng-if="!vm.mscMarks">Show Marks</a>
+                                    <a class="btn btn-danger btn-xs" data-ng-click="vm.mscMarks=!vm.mscMarks" data-ng-if="vm.mscMarks">Hide Marks</a>
                                 </div>
                             </div>
                             <div class="col-md-2 col-sm-4 col-xs-12 text-center">
                                 <input type="text" class="knob" data-max="10" value="8.3" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgcolor="#F39C12">
                                 <div class="knob-label">CGPA: 8.3</div>
                             </div><!-- ./col -->
+                        </div>
+                    </li>
+                    <li data-ng-show="vm.mscMarks">
+                        <div class="timeline-item">
+                            <div class="box box-primary">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Semester Wise Marks</h3>
+                                    <div class="box-tools pull-right">
+                                        <div class="btn-group">
+                                            <button class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                <li><a data-ng-click="vm.mscAreaChart();">Area Chart</a></li>
+                                                <li><a data-ng-click="vm.mscLineChart();">Line Chart</a></li>
+                                                <li><a data-ng-click="vm.mscBarChart();">Bar Chart</a></li>
+                                            </ul>
+                                        </div>
+                                        <button class="btn btn-danger btn-sm " data-widget="remove" data-ng-click="vm.mscMarks=!vm.mscMarks"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <div class="chart">
+                                        <canvas id="mscChart" style="height:350px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li class="time-label">
@@ -91,17 +142,41 @@ Date: 15 Jan 2016
                     <li>
                         <div class="timeline-item">
                             <div class="callout callout-success col-md-10 col-sm-8 col-xs-12">
-                                <h4>Kovai Kalaimagal College of Arts & Science, Coimbatore</h4>
-                                <p class="text-bold">Bharathiar University, Coimbatore</p>
+                                <h4>S.N. Matric Higher Sec. School, Coimbatore</h4>
+                                <p class="text-bold">Stateboard</p>
                                 <div class="timeline-footer">
-                                    <a class="btn btn-primary btn-xs">Read more</a>
-                                    <a class="btn btn-danger btn-xs">Delete</a>
+                                    <a class="btn btn-primary btn-xs" data-ng-click="vm.hscMarks=!vm.hscMarks" data-ng-if="!vm.hscMarks">Show Marks</a>
+                                    <a class="btn btn-danger btn-xs" data-ng-click="vm.hscMarks=!vm.hscMarks" data-ng-if="vm.hscMarks">Hide Marks</a>
                                 </div>
                             </div>
                             <div class="col-md-2 col-sm-4 col-xs-12 text-center">
                                 <input type="text" class="knob" data-max="100" value="62.75" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgcolor="#00A65A">
                                 <div class="knob-label">CGPA: 62.75%</div>
                             </div><!-- ./col -->
+                        </div>
+                    </li>
+                    <li data-ng-show="vm.hscMarks">
+                        <div class="timeline-item">
+                            <div class="box box-primary">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Subject Wise Marks</h3>
+                                    <div class="box-tools pull-right">
+                                        <div class="btn-group">
+                                            <button class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                <li><a data-ng-click="vm.hscRadarChart();">Radar Chart</a></li>
+                                                <li><a data-ng-click="vm.hscBarChart();">Bar Chart</a></li>
+                                            </ul>
+                                        </div>
+                                        <button class="btn btn-danger btn-sm " data-widget="remove" data-ng-click="vm.hscMarks=!vm.hscMarks"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <div class="chart">
+                                        <canvas id="hscChart" style="height:350px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li class="time-label">
@@ -121,18 +196,37 @@ Date: 15 Jan 2016
                                 <h4>Government Higher Secondary School, Coimbatore</h4>
                                 <p class="text-bold">Stateboard</p>
                                 <div class="timeline-footer">
-                                    <a class="btn btn-primary btn-xs">Mark Details</a>
-                                    <a class="btn btn-danger btn-xs">Hide</a>
+                                    <a class="btn btn-primary btn-xs" data-ng-click="vm.sslcMarks=!vm.sslcMarks" data-ng-if="!vm.sslcMarks">Show Marks</a>
+                                    <a class="btn btn-danger btn-xs" data-ng-click="vm.sslcMarks=!vm.sslcMarks" data-ng-if="vm.sslcMarks">Hide Marks</a>
                                 </div>
                             </div>
                             <div class="col-md-2 col-sm-4 col-xs-12 text-center">
                                 <input type="text" class="knob" data-max="100" value="84.2" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgcolor="#DD4B39">
                                 <div class="knob-label">CGPA: 84.2%</div>
                             </div><!-- ./col -->
-                            <div class="callout callout-danger col-md-10 col-sm-8 col-xs-12">
-                                <div class="timeline-footer">
-                                    <a class="btn btn-primary btn-xs">Mark Details</a>
-                                    <a class="btn btn-danger btn-xs">Show</a>
+                        </div>
+                    </li>
+                    <li data-ng-show="vm.sslcMarks">
+                        <div class="timeline-item">
+                            <div class="box box-primary">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Subject Wise Marks</h3>
+                                    <div class="box-tools pull-right">
+                                        <div class="btn-group">
+                                            <button class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                <li><a data-ng-click="vm.sslcPieChart();">Pie Chart</a></li>
+                                                <li><a data-ng-click="vm.sslcDoughNutChart();">Dough Nut Chart</a></li>
+                                                <li><a data-ng-click="vm.sslcPolarChart();">Polar Chart</a></li>
+                                            </ul>
+                                        </div>
+                                        <button class="btn btn-danger btn-sm " data-widget="remove" data-ng-click="vm.sslcMarks=!vm.sslcMarks"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <div class="chart">
+                                        <canvas id="sslcChart" style="height:350px;"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>

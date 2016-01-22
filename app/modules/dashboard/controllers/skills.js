@@ -38,7 +38,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         {
             Software: "Node JS",
             Percentage: "83",
-            theme: "lime",
+            theme: "purple",
             image: "node",
             progressbar: "blue"
         },
@@ -52,7 +52,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         {
             Software: "Type Script",
             Percentage: "70",
-            theme: "Gray",
+            theme: "teal",
             image: "typescript",
             progressbar: "blue"
         },
@@ -96,7 +96,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         {
             Software: "Bootstrap",
             Percentage: "85",
-            theme: "lime",
+            theme: "purple",
             image: "bootstrap",
             progressbar: "blue"
         },
@@ -110,7 +110,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         {
             Software: "Corel Draw",
             Percentage: "95",
-            theme: "Gray",
+            theme: "teal",
             image: "coreldraw",
             progressbar: "blue"
         },

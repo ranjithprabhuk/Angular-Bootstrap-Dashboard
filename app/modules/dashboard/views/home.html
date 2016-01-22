@@ -7,7 +7,7 @@ Date: 05 Jan 2016
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            KMIT Solutions
+           My Home Page
 
         </h1>
         <ol class="breadcrumb">
@@ -19,41 +19,12 @@ Date: 05 Jan 2016
     <section class="content">
         <!-- Info boxes -->
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-12" data-ng-repeat="data in vm.home.mainData">
                 <div class="info-box">
-                    <span class="info-box-icon bg-aqua"><i class="fa fa-puzzle-piece"></i></span>
+                    <span class="info-box-icon bg-{{data.theme}}"><i class="fa fa-{{data.icon}}"></i></span>
                     <div class="info-box-content">
-                        <span class="info-box-text">Projects</span>
-                        <span class="info-box-number">30+</span>
-                    </div><!-- /.info-box-content -->
-                </div><!-- /.info-box -->
-            </div><!-- /.col -->
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="info-box">
-                    <span class="info-box-icon bg-red"><i class="fa fa-paint-brush"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-text">Desings</span>
-                        <span class="info-box-number">250+</span>
-                    </div><!-- /.info-box-content -->
-                </div><!-- /.info-box -->
-            </div><!-- /.col -->
-            <!-- fix for small devices only -->
-            <div class="clearfix visible-sm-block"></div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="info-box">
-                    <span class="info-box-icon bg-green"><i class="fa fa-trophy"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-text">Awards</span>
-                        <span class="info-box-number">50+</span>
-                    </div><!-- /.info-box-content -->
-                </div><!-- /.info-box -->
-            </div><!-- /.col -->
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="info-box">
-                    <span class="info-box-icon bg-yellow"><i class="fa fa-glass"></i></span>
-                    <div class="info-box-content">
-                        <span class="info-box-text">Cups of Beer</span>
-                        <span class="info-box-number">0</span>
+                        <span class="info-box-text">{{data.title}}</span>
+                        <span class="info-box-number">{{data.value}}</span>
                     </div><!-- /.info-box-content -->
                 </div><!-- /.info-box -->
             </div><!-- /.col -->
@@ -62,25 +33,31 @@ Date: 05 Jan 2016
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">About Me</h3>
+                        <h3 class="box-title">Am Casual but not Usual</h3>
                         <div class="box-tools pull-right">
-                            <button class="btn btn-box-tool" data-ng-click="vm.showDetails=!vm.showDetails"><i class="fa fa-chevron-circle-up" data-ng-if="vm.showDetails"></i><i class="fa fa-chevron-circle-down" data-ng-if="!vm.showDetails"></i></button>
+                            <button class="btn btn-box-tool bg-aqua-gradient" data-ng-click="vm.showDetails=!vm.showDetails"><i class="fa fa-chevron-circle-up" data-ng-if="vm.showDetails"></i><i class="fa fa-chevron-circle-down" data-ng-if="!vm.showDetails"></i></button>
                         </div>
                     </div><!-- /.box-header -->
 
-                    <div class="box-body" data-ng-if="vm.showDetails">
+                    <div class="box-body" data-ng-show="vm.showDetails">
                         <div class="row">
                             <div class="col-md-8">
-
+                                <div id="owl-single" class="owl-carousel owl-theme">
+                                    <div class="item"> <img src="../../../../images/home/photo1.jpg" /></div>
+                                    <div class="item"> <img src="../../../../images/home/photo2.jpg" /></div>
+                                    <div class="item"> <img src="../../../../images/home/photo3.jpg" /></div>
+                                    <div class="item"> <img src="../../../../images/home/photo4.jpg" /></div>
+                                    <div class="item"> <img src="../../../../images/home/photo5.jpg" /></div>
+                                </div>
                             </div><!-- /.col -->
-                            <div class="col-md-4">
+                            <div class="col-md-4" style="border-left:1px solid #eee;">
                                 <p class="text-center">
-                                    <strong>My Skills</strong>
+                                    <strong>Know About Me</strong>
                                 </p>
-                                <div class="progress-group" data-ng-repeat="skill in vm.skills">
+                                <div class="progress-group" data-ng-repeat="skill in vm.home.skills">
                                     <span class="progress-text">{{skill.title}}</span>
                                     <span class="progress-number"><b>{{skill.percentage}}</b>/100</span>
-                                    <div class="progress sm">
+                                    <div class="progress sm border-radius-5">
                                         <div class="progress-bar progress-bar-{{skill.theme}}" style="width: {{skill.percentage}}%"></div>
                                     </div>
                                 </div><!-- /.progress-group -->
@@ -88,36 +65,75 @@ Date: 05 Jan 2016
                         </div><!-- /.row -->
                     </div><!-- ./box-body -->
                     <div class="box-footer">
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="description-block border-right">
-                                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                                    <h5 class="description-header">$35,210.43</h5>
-                                    <span class="description-text">TOTAL REVENUE</span>
-                                </div><!-- /.description-block -->
-                            </div><!-- /.col -->
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="description-block border-right">
-                                    <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
-                                    <h5 class="description-header">$10,390.90</h5>
-                                    <span class="description-text">TOTAL COST</span>
-                                </div><!-- /.description-block -->
-                            </div><!-- /.col -->
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="description-block border-right">
-                                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
-                                    <h5 class="description-header">$24,813.53</h5>
-                                    <span class="description-text">TOTAL PROFIT</span>
-                                </div><!-- /.description-block -->
-                            </div><!-- /.col -->
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="description-block">
-                                    <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
-                                    <h5 class="description-header">1200</h5>
-                                    <span class="description-text">GOAL COMPLETIONS</span>
-                                </div><!-- /.description-block -->
+                    <div class="row">
+                        <h3 class="website-text text-uppercase">Tech & Tools I Use Most</h3>
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item bg-yellow-gradient">
+                                <img src="../../../../images/icons/angular.png" />
+                                <p>Angular JS</p>
                             </div>
+                            <div class="item bg-light-blue-gradient">
+                                <img src="../../../../images/icons/mongodb.png" />
+                                <p>Mongo DB</p>
+                            </div>
+                            <div class="item bg-green-gradient">
+                                <img src="../../../../images/icons/express.png" />
+                                <p>Express JS</p>
+                            </div>
+                            <div class="item bg-maroon-gradient">
+                                <img src="../../../../images/icons/node.png" />
+                                <p>Node JS</p>
+                            </div>
+                            <div class="item bg-red-gradient">
+                                <img src="../../../../images/icons/javascript.png" />
+                                <p>Java Script</p>
+                            </div>
+                            <div class="item bg-teal-gradient">
+                                <img src="../../../../images/icons/typescript.png" />
+                                <p>Type Script</p>
+                            </div>
+                            <div class="item bg-purple-gradient">
+                                <img src="../../../../images/icons/jquery.png" />
+                                <p>jQuery</p>
+                            </div>
+                            <div class="item bg-black-gradient">
+                                <img src="../../../../images/icons/joomla.png" />
+                                <p>Joomla</p>
+                            </div>
+                            <div class="item bg-blue-gradient">
+                                <img src="../../../../images/icons/html5.png" />
+                                <p>HTML 5</p>
+                            </div>
+                            <div class="item bg-yellow-gradient">
+                                <img src="../../../../images/icons/css3.png" />
+                                <p>CSS 3</p>
+                            </div>
+                            <div class="item bg-light-blue-gradient">
+                                <img src="../../../../images/icons/saas.png" />
+                                <p>SAAS</p>
+                            </div>
+                            <div class="item bg-green-gradient">
+                                <img src="../../../../images/icons/bootstrap.png" />
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="item bg-red-gradient">
+                                <img src="../../../../images/icons/Photoshop.png" />
+                                <p>Photo Shop</p>
+                            </div>
+                            <div class="item bg-purple-gradient">
+                                <img src="../../../../images/icons/coreldraw.png" />
+                                <p>Corel Draw</p>
+                            </div>
+                        </div>
+
+                        <div class="customNavigation">
+                            <a class="btn prev btn-info btn-sm btn-flat">Previous</a>
+                            <a class="btn next btn-warning btn-sm btn-flat">Next</a>
+                            <a class="btn play btn-success btn-sm btn-flat">Autoplay</a>
+                            <a class="btn stop btn-danger btn-sm btn-flat">Stop</a>
+                        </div>
                         </div><!-- /.row -->
+
                     </div><!-- /.box-footer -->
                 </div><!-- /.box -->
             </div><!-- /.col -->

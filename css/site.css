@@ -78,3 +78,50 @@ padding-left:2px;
     .website-text{
         color:#808080; padding:2px 3px 14px 3px;text-align:center;font-weight:bold;
     }
+
+
+    /*=========== OWL Slider CSS ============*/
+
+    #owl-demo .item{
+      background: #3fbf79;
+      padding: 4px 0px;
+      margin: 10px;
+      color: #FFF;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      text-align: center;
+      height:116px;
+    }
+
+    #owl-demo img{
+height:85px;
+padding:10px;
+    }
+
+
+    .customNavigation{
+      text-align: center;
+    }
+    .customNavigation a{
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+
+    #owl-single .item img{
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .border-radius-5{
+        border-radius:5px!important;
+    }
+
+
