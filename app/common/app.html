@@ -10,7 +10,7 @@
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <a class="sidebar-toggle" data-toggle="offcanvas" role="button" data-ng-click="vm.sideBar(1);">
                 <span class="sr-only">Toggle navigation</span>
             </a>
             <!-- Navbar Right Menu -->
@@ -63,7 +63,7 @@
                                     <h3>Ranjithprabhu. K</h3>
                                 <p class="text-center">
                                     Software Engineer
-                                     <small>Developing Web Apps - since 2010</small>
+                                     <small>Playing in Web - since 2010</small>
                                  </p>
                             </li>
                             <!-- Menu Footer-->
@@ -106,60 +106,9 @@
             </form>
             <!-- /.search form -->
             <ul class="sidebar-menu">
-                <!--<li class="header">MAIN NAVIGATION</li>-->
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.dashboard">
-                        <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.skills">
-                        <i class="fa fa-gears"></i> <span>Skills</span>
-                    </a>
-                </li>
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.education">
-                        <i class="fa fa-clock-o"></i> <span>Education</span>
-                    </a>
-                </li>
-                <!--<li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.achievements">
-                        <i class="fa fa-users"></i> <span>Achievements</span>
-                    </a>
-                </li>-->
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.recent">
-                        <i class="fa fa-file-code-o"></i> <span>Recent Projects</span>
-                    </a>
-                </li>
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.experience">
-                        <i class="fa fa-flag-o"></i> <span>Experience</span>
-                    </a>
-                </li>
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.portfolio">
-                        <i class="fa fa-trash-o"></i> <span>Portfolio</span>
-                    </a>
-                </li>
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.about">
-                        <i class="fa fa-birthday-cake"></i> <span>About Me</span>
-                    </a>
-                </li>
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.contact">
-                        <i class="fa fa-envelope-o"></i> <span>Contact</span>
-                    </a>
-                </li>
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.websites">
-                        <i class="fa fa-search"></i> <span>Websites</span>
-                    </a>
-                </li>
-                <li class="treeview" ui-sref-active="active">
-                    <a ui-sref="app.gallery">
-                        <i class="fa fa-file-code-o"></i> <span>Gallery</span>
+                <li class="treeview" ui-sref-active="active" ng-click="vm.sideBar();" data-ng-repeat="menu in vm.menuItems">
+                    <a ui-sref="app.{{menu.state}}">
+                        <i class="fa fa-{{menu.icon}}"></i> <span>{{menu.title}}</span>
                     </a>
                 </li>
             </ul>

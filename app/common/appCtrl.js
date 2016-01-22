@@ -15,6 +15,8 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
 
     var vm = this;
 
+
+    //avalilable themes
     vm.themes = [
         {
             theme: "black",
@@ -89,6 +91,8 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
             icon: "-o"
         },
     ];
+
+    //available layouts
     vm.layouts = [
         {
             name: "Boxed",
@@ -104,13 +108,86 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
         },
     ];
 
+
+    //Main menu items of the dashboard
+    vm.menuItems = [
+        {
+            title: "Dashboard",
+            icon: "dashboard",
+            state:"dashboard"
+        },
+        {
+            title: "Skills",
+            icon: "gears",
+            state: "skills"
+        },
+        {
+            title: "Education",
+            icon: "clock-0",
+            state: "education"
+        },
+        {
+            title: "Recent Projects",
+            icon: "file-code-o",
+            state: "recent"
+        },
+        {
+            title: "Experience",
+            icon: "flag-o",
+            state: "experience"
+        },
+        {
+            title: "Portfolio",
+            icon: "dashboard",
+            state: "portfolio"
+        },
+        {
+            title: "About Me",
+            icon: "dashboard",
+            state: "about"
+        },
+        {
+            title: "Contact",
+            icon: "dashboard",
+            state: "contact"
+        },
+        {
+            title: "Websites",
+            icon: "dashboard",
+            state: "websites"
+        }
+    ]
+
+    //set the theme selected
     vm.setTheme = function (value) {
         $rootScope.theme = value;
     };
 
+
+    //set the Layout in normal view
     vm.setLayout = function (value) {
         $rootScope.layout = value;
     };
+
+
+    //controll sidebar open & close in mobile and normal view
+    vm.sideBar = function (value) {
+        if($(window).width()<=767){
+        if ($("body").hasClass('sidebar-open'))
+            $("body").removeClass('sidebar-open');
+        else
+            $("body").addClass('sidebar-open');
+        }
+        else {
+            if(value==1){
+            if ($("body").hasClass('sidebar-collapse'))
+                $("body").removeClass('sidebar-collapse');
+            else
+                $("body").addClass('sidebar-collapse');
+            }
+        }
+    };
+
 
     console.log('getting in to the app controller');
 
