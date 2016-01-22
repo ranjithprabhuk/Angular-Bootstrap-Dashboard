@@ -6,7 +6,7 @@ Angular Bootstrap Dashboard uses ui-router for routing purposes.
 
 ## Get The Dashboard
 
-* [Demo] (http://ranjithprabhu.in/dashboard)
+* [Demo] (http://dashboard.ranjithprabhu.in)
 
 * [Download Source]  (https://github.com/ranjithprabhuk/Angular-Bootstrap-Dashboard/archive/master.zip)
 
