@@ -19,6 +19,12 @@ Angular Bootstrap Dashboard uses ui-router for routing purposes.
 * Multiple Layouts
 * Works in All Modern Browsers
 
+## Plugins used
+* jQuery
+* jQuery Knob
+* Chart.js
+* Owl Carousel
+
 ## Usage
 * Download and customize the application as per your requirements.
 

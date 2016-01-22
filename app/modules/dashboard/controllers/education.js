@@ -88,9 +88,9 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         datasets: [
             {
                 label: "My ME Semester Marks",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
+                fillColor: "rgba(0,192,239,0.2)",
+                strokeColor: "rgba(0,192,239,1)",
+                pointColor: "rgba(0,151,188,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
@@ -104,9 +104,9 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         datasets: [
             {
                 label: "My ME Semester Marks",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
+                fillColor: "rgba(243,156,18,0.2)",
+                strokeColor: "rgba(243,156,18,1)",
+                pointColor: "rgba(200,127,10,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
@@ -120,9 +120,9 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         datasets: [
             {
                 label: "My HSC Marks",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
+                fillColor: "rgba(0,166,90,0.2)",
+                strokeColor: "rgba(0,166,90,1)",
+                pointColor: "rgba(0,115,62,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
@@ -239,7 +239,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         };
 
         vm.sslcDoughNutChart = function () {
-            var sslcChart = new Chart(sslc).Pie(vm.sslcData, vm.pieChartOptions);
+            var sslcChart = new Chart(sslc).Pie(vm.sslcData, vm.polarChartOptions);
         };
 
         vm.sslcPolarChart = function () {
