@@ -9,7 +9,7 @@
 
  ===========================================================*/
 
-var dashboard = angular.module('dashboard', ['ui.router', 'ngAnimate']);
+var dashboard = angular.module('dashboard', ['ui.router', 'ngAnimate','ngMaterial']);
 
 
 dashboard.config(["$stateProvider", function ($stateProvider) {

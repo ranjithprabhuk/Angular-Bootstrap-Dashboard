@@ -12,6 +12,11 @@ dashboard.controller("ContactController", ['$rootScope', '$scope', '$state', '$l
 function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
     var vm = this;
 
+    vm.message = {};
+
+    vm.submitForm=function(){
+        console.log(vm.message);
+    };
     console.log("coming to Contact controller");
 
 }]);
