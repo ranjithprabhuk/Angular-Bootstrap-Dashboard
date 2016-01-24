@@ -104,7 +104,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
             Software: "Photo Shop",
             Percentage: "90",
             theme: "maroon",
-            image: "photoshop",
+            image: "Photoshop",
             progressbar: "blue"
         },
         {

@@ -40,7 +40,7 @@
     app.directive('flashMessage', ['$compile', '$rootScope', function($compile, $rootScope) {
         return {
             restrict: 'A',
-            template: '<div role="alert" ng-show="hasFlash" class="alert {{flash.addClass}} alert-{{flash.type}} alert-dismissible ng-hide alertIn alertOut col-md-offset-3 col-md-6 col-md-offset-3"> <span dynamic="flash.text"></span> <button type="button" class="close" close-flash><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> </div>',
+            template: '<div role="alert" ng-show="hasFlash" class="alert {{flash.addClass}} alert-{{flash.type}} alert-dismissible ng-hide alertIn alertOut"> <span dynamic="flash.text"></span> <button type="button" class="close" close-flash><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> </div>',
             link: function(scope, ele, attrs) {
                 // get timeout value from directive attribute and set to flash timeout
                 $rootScope.flash.timeout = parseInt(attrs.flashMessage, 10);
