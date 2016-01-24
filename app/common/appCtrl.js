@@ -114,7 +114,7 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
         {
             title: "Dashboard",
             icon: "dashboard",
-            state:"dashboard"
+            state: "dashboard"
         },
         {
             title: "Skills",
@@ -123,8 +123,13 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
         },
         {
             title: "Education",
-            icon: "clock-0",
+            icon: "graduation-cap",
             state: "education"
+        },
+        {
+            title: "Experience",
+            icon: "suitcase",
+            state: "experience"
         },
         {
             title: "Recent Projects",
@@ -132,31 +137,26 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
             state: "recent"
         },
         {
-            title: "Experience",
-            icon: "flag-o",
-            state: "experience"
+            title: "Websites",
+            icon: "globe",
+            state: "websites"
         },
         {
             title: "Portfolio",
-            icon: "dashboard",
+            icon: "anchor",
             state: "portfolio"
         },
         {
             title: "About Me",
-            icon: "dashboard",
+            icon: "user-secret",
             state: "about"
         },
         {
             title: "Contact",
-            icon: "dashboard",
+            icon: "phone",
             state: "contact"
-        },
-        {
-            title: "Websites",
-            icon: "dashboard",
-            state: "websites"
         }
-    ]
+    ];
 
     //set the theme selected
     vm.setTheme = function (value) {
@@ -188,6 +188,10 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
         }
     };
 
+    //navigate to search page
+    vm.search = function () {
+        $state.go('app.search');
+    };
 
     console.log('getting in to the app controller');
 

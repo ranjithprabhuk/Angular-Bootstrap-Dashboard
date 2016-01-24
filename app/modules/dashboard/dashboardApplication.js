@@ -1,7 +1,7 @@
 ﻿/*==========================================================
     Author      : Ranjithprabhu K
     Date Created: 24 Dec 2015
-    Description : Base for Login module
+    Description : Base for Dashboard Application module
     
     Change Log
     s.no      date    author     description     
@@ -132,6 +132,17 @@ dashboard.config(["$stateProvider", function ($stateProvider) {
         controllerAs: 'vm',
         data: {
             pageTitle: 'Gallery'
+        }
+    });
+
+    //Search page state
+    $stateProvider.state('app.search', {
+        url: '/search',
+        templateUrl: 'app/modules/dashboard/views/search.html',
+        controller: 'appCtrl',
+        controllerAs: 'vm',
+        data: {
+            pageTitle: 'Search'
         }
     });
 

@@ -1,7 +1,7 @@
 ﻿<div class="wrapper">
     <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>RD</b></span>
             <!-- logo for regular state and mobile devices -->
@@ -100,7 +100,7 @@
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
-                        <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                        <button type="button" name="search" id="search-btn" class="btn btn-flat" data-ng-click="vm.search();"><i class=" fa fa-search"></i></button>
                     </span>
                 </div>
             </form>
@@ -109,6 +109,11 @@
                 <li class="treeview" ui-sref-active="active" ng-click="vm.sideBar();" data-ng-repeat="menu in vm.menuItems">
                     <a ui-sref="app.{{menu.state}}">
                         <i class="fa fa-{{menu.icon}}"></i> <span>{{menu.title}}</span>
+                    </a>
+                </li>
+                <li class="treeview" ui-sref-active="active" ng-click="vm.sideBar();">
+                    <a href="https://github.com/ranjithprabhuk/Angular-Bootstrap-Dashboard" target="_blank">
+                        <i class="fa fa-github"></i> <span>View in Github</span>
                     </a>
                 </li>
             </ul>
