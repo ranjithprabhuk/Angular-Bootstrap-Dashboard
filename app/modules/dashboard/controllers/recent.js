@@ -47,7 +47,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
           description: "E-Comm sites for various Attractions, Zoos and Amusement Parks",
           image: "e-comm",
           theme:"info",
-          url: "fp360.us:830",
+          url: "fp360.us:459",
           roles: [
               {
                   theme: "success",
@@ -62,7 +62,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
                   myRole: "Service Integration"
               },
               {
-                  theme: "red",
+                  theme: "danger",
                   myRole: "UX Consultant"
               },
               {
@@ -77,7 +77,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
           title: "Angular Bootstrap Dashboard",
           description: "Angular Bootstrap Dashboard is a web dashboard application based on Bootstrap and AngularJS.",
           image: "dashboard",
-          theme: "warning",
+          theme: "success",
           url: "dashboard.ranjithprabhu.in",
           roles: [
               {
@@ -91,7 +91,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
           heading: "Reporting Tool",
           title: "Focus Point Advanced Reporting",
           description: "Web application to view all the Reports of the Sales",
-          image: "active-report",
+          image: "active-reports",
           theme: "danger",
           url: "fp360.us:202",
           roles: [
@@ -104,7 +104,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
                   myRole: "UI Development"
               },
               {
-                  theme: "red",
+                  theme: "danger",
                   myRole: "jQuery Plugin Development"
               }
           ]
@@ -115,8 +115,8 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
           title: "Ticket Kiosk",
           description: "Web application developed for Ticket vending machine to use it inside the zoos",
           image: "kiosk",
-          theme: "warning",
-          url: "fp360.us:830",
+          theme: "primary",
+          url: "fp360.us:7077",
           roles: [
               {
                   theme: "success",

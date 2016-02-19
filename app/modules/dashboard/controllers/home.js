@@ -218,7 +218,8 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         navigation: true, // Show next and prev buttons
         slideSpeed: 300,
         paginationSpeed: 400,
-        singleItem: true
+        singleItem: true,
+        autoPlay: 5000, //Set AutoPlay to 3 seconds
     });
 }]);
 

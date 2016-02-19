@@ -92,11 +92,6 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
             title: "Garments Today",
             image: "garment",
             link: "http://garmenttoday.in"
-        },
-        {
-            title: "Curriculam Vitae",
-            image: "cv",
-            link: "http://cv.ranjithprabhu.in"
         }
     ];
     console.log("coming to Websites controller");
