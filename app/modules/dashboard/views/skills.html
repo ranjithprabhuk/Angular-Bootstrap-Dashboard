@@ -59,5 +59,30 @@ Date: 13 Jan 2016
         </div>
     </section>
 
+<section class="content-header">
+    <h1>Others</h1>
+</section>
+<!-- Others -->
+<section class="content">
+    <div class="row">
+        <div class="col-lg-3 col-xs-6" data-ng-repeat="skill in vm.skills.others">
+            <!-- small box -->
+            <div class="small-box bg-{{skill.theme}}-gradient">
+                <div class="inner">
+                    <h3>{{skill.Percentage}}<small class="text-black">%</small></h3>
+                    <p class="text-bold">{{skill.Software}}</p>
+                </div>
+                <div class="icon">
+                    <i class="fa"><img src="../../../../images/icons/{{skill.image}}.png" class="img-responsive" width="70" /></i>
+                </div>
+                <div class="progress progress-sm active">
+                    <div class="progress-bar progress-bar-{{skill.theme}} progress-bar-striped" role="progressbar" aria-valuenow="{{skill.Percentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.Percentage}}%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 

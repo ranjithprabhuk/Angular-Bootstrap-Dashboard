@@ -76,7 +76,22 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         {
             title: "Karpagam University Symposium",
             image: "kite",
-            link: "http://kite2k15.in"
+            link: "http://kite.ranjithprabhu.in"
+        },
+        {
+            title: "Curriculam Vitae",
+            image: "cv",
+            link: "http://cv.ranjithprabhu.in"
+        },
+        {
+            title: "Kode Work",
+            image: "kodework",
+            link: "http://mockup.ranjithprabhu.in"
+        },
+        {
+            title: "Garments Today",
+            image: "garment",
+            link: "http://garmenttoday.in"
         },
         {
             title: "Curriculam Vitae",

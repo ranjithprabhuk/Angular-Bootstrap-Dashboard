@@ -12,8 +12,9 @@ dashboard.controller("SkillController", ['$rootScope', '$scope', '$state', '$loc
 function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
     var vm = this;
 
-    console.log("coming to Skills controller");
     vm.skills = {};
+
+    //development stack
     vm.skills.development = [
         {
             Software: "Mongo DB",
@@ -25,53 +26,47 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
             Software: "Express JS",
             Percentage: "75",
             theme: "aqua",
-            image: "express",
-            progressbar: "blue"
+            image: "express"
         },
         {
             Software: "Angular JS",
             Percentage: "85",
             theme: "green",
-            image: "angular",
-            progressbar: "blue"
+            image: "angular"
         },
         {
             Software: "Node JS",
             Percentage: "83",
             theme: "purple",
-            image: "node",
-            progressbar: "blue"
+            image: "node"
         },
         {
             Software: "Javascript",
             Percentage: "80",
             theme: "maroon",
-            image: "javascript",
-            progressbar: "blue"
+            image: "javascript"
         },
         {
             Software: "Type Script",
             Percentage: "70",
             theme: "teal",
-            image: "typescript",
-            progressbar: "blue"
+            image: "typescript"
         },
         {
             Software: "jQuery & AJAX",
             Percentage: "80",
             theme: "yellow",
-            image: "jquery",
-            progressbar: "blue"
+            image: "jquery"
         },
         {
             Software: "Joomla",
             Percentage: "85",
             theme: "red",
-            image: "joomla",
-            progressbar: "blue"
+            image: "joomla"
         }
     ];
 
+    //Design Stack
     vm.skills.design = [
         {
             Software: "HTML 5",
@@ -83,43 +78,65 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
             Software: "CSS 3",
             Percentage: "83",
             theme: "aqua",
-            image: "css3",
-            progressbar: "blue"
+            image: "css3"
         },
         {
             Software: "SAAS",
             Percentage: "72",
             theme: "green",
-            image: "saas-css",
-            progressbar: "blue"
+            image: "saas-css"
         },
         {
             Software: "Bootstrap",
             Percentage: "85",
             theme: "purple",
-            image: "bootstrap",
-            progressbar: "blue"
+            image: "bootstrap"
         },
         {
             Software: "Photo Shop",
             Percentage: "90",
             theme: "maroon",
-            image: "Photoshop",
-            progressbar: "blue"
+            image: "Photoshop"
         },
         {
             Software: "Corel Draw",
             Percentage: "95",
             theme: "teal",
-            image: "coreldraw",
-            progressbar: "blue"
+            image: "coreldraw"
         },
         {
             Software: "Flash",
             Percentage: "65",
             theme: "yellow",
-            image: "flash",
-            progressbar: "blue"
+            image: "flash"
+        }
+    ];
+
+    //Other Stack
+    vm.skills.others = [
+        {
+            Software: "Java",
+            Percentage: "60",
+            theme: "aqua",
+            image: "java",
+        },
+        {
+            Software: "SQL",
+            Percentage: "70",
+            theme: "purple",
+            image: "sql"
+        },
+        {
+            Software: "Hardware",
+            Percentage: "87",
+            theme: "maroon",
+            image: "hardware"
+        },
+        {
+            Software: "Cloud Computing",
+            Percentage: "72",
+            theme: "yellow",
+            image: "cloud"
         }
     ];
 }]);

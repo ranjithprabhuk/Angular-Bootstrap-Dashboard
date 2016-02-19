@@ -18,7 +18,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
           heading: "e - POS",
           title: "Focus Point e-POS",
           description: "Web application to handle Point of Sale and Venue management",
-          image: "7",
+          image: "e-pos",
           theme: "warning",
           url:"fp360.us:830",
           roles: [
@@ -42,10 +42,10 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
       },
       {
           id: 2,
-          heading: "e - Commerece",
+          heading: "e - Commerce",
           title: "Focus Point New E- Comm",
-          description: "Web application to handle Point of Sale and Venue management",
-          image: "7",
+          description: "E-Comm sites for various Attractions, Zoos and Amusement Parks",
+          image: "e-comm",
           theme:"info",
           url: "fp360.us:830",
           roles: [
@@ -64,6 +64,10 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
               {
                   theme: "red",
                   myRole: "UX Consultant"
+              },
+              {
+                  theme: "primary",
+                  myRole: "Version Control"
               }
           ]
       },
@@ -71,10 +75,25 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
           id: 3,
           heading: "Dashboard",
           title: "Angular Bootstrap Dashboard",
-          description: "Web application to handle Point of Sale and Venue management",
-          image: "7",
+          description: "Angular Bootstrap Dashboard is a web dashboard application based on Bootstrap and AngularJS.",
+          image: "dashboard",
           theme: "warning",
           url: "dashboard.ranjithprabhu.in",
+          roles: [
+              {
+                  theme: "success",
+                  myRole: "Individually Developed by Me"
+              }
+          ]
+      },
+      {
+          id: 4,
+          heading: "Reporting Tool",
+          title: "Focus Point Advanced Reporting",
+          description: "Web application to view all the Reports of the Sales",
+          image: "active-report",
+          theme: "danger",
+          url: "fp360.us:202",
           roles: [
               {
                   theme: "success",
@@ -85,23 +104,19 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
                   myRole: "UI Development"
               },
               {
-                  theme: "warning",
-                  myRole: "Service Integration"
-              },
-              {
                   theme: "red",
-                  myRole: "UX Consultant"
+                  myRole: "jQuery Plugin Development"
               }
           ]
       },
       {
-          id: 4,
-          heading: "E- Commerce",
-          title: "Angular Bootstrap E - Commerce Site",
-          description: "Web application to handle Point of Sale and Venue management",
-          image: "7",
-          theme: "danger",
-          url: "ecom.ranjithprabhu.in",
+          id: 5,
+          heading: "Kiosk",
+          title: "Ticket Kiosk",
+          description: "Web application developed for Ticket vending machine to use it inside the zoos",
+          image: "kiosk",
+          theme: "warning",
+          url: "fp360.us:830",
           roles: [
               {
                   theme: "success",

@@ -94,7 +94,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [7.5,8.5,7.3,10.0]
+                data: [7.5,8.4,7.6,10.0]
             }
         ]
     };
@@ -103,14 +103,14 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
         labels: ["Sem 1 & 2", "Sem 3", "Sem 4","Sem 5","Sem 6","Sem 7","Sem 8","Sem 9","Sem 10"],
         datasets: [
             {
-                label: "My ME Semester Marks",
+                label: "My MSC Semester Marks",
                 fillColor: "rgba(243,156,18,0.2)",
                 strokeColor: "rgba(243,156,18,1)",
                 pointColor: "rgba(200,127,10,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [7.5, 8.5, 7.3, 10.0,8.3,7.3,9.3,8.3,10.0]
+                data: [7.7, 7.8, 8.5, 8.1,8.1,10.0,7.8,8.3,10.0]
             }
         ]
     };
@@ -126,20 +126,20 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [125,135,145,155,165,175]
+                data: [157,140,114,091,137,114]
             }
         ]
     };
 
     vm.sslcData = [
             {
-                value: 88,
+                value: 86,
                 color: "#F7464A",
                 highlight: "#FF5A5E",
                 label: "Tamil"
             },
             {
-                value: 86,
+                value: 81,
                 color: "#46BFBD",
                 highlight: "#5AD3D1",
                 label: "English"
@@ -151,13 +151,13 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
                 label: "Maths"
             },
             {
-                value: 75,
+                value: 71,
                 color: "#949FB1",
                 highlight: "#A8B3C5",
                 label: "Science"
             },
             {
-                value: 85,
+                value: 86,
                 color: "#4D5360",
                 highlight: "#616774",
                 label: "Social Science"
@@ -165,32 +165,6 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
     ];
 
 
-        vm.mePieData = [
-          {
-              value: 700,
-              color: "#f56954",
-              highlight: "#f56980",
-              label: "Sem 1"
-          },
-          {
-              value: 500,
-              color: "#00a65a",
-              highlight: "#00a68b",
-              label: "Sem 2"
-          },
-          {
-              value: 400,
-              color: "#f39c12",
-              highlight: "#f39c90",
-              label: "Sem 3"
-          },
-          {
-              value: 600,
-              color: "#00c0ef",
-              highlight: "#00c022",
-              label: "Sem 4"
-          }
-        ];
 
 
         var meChart = new Chart(me).Line(vm.meData, vm.lineChartOptions);

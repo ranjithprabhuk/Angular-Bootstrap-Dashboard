@@ -15,61 +15,77 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
 
     vm.portfolioData = [
         {
-            image: "7",
-            title: "Butterfly"
+            image: "alpha-tech-logo",
+            title: "Alpha Logo"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "zplus",
+            title: "Z+ Plus Logo"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "thenthirupathi",
+            title: "Thenthirupathi Logo"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "thepremierresidency",
+            title: "The Premier Residency"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "jayam",
+            title: "Jayam Real Estates Logo"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "icescoops",
+            title: "Ice Scoops"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "sekarindustries",
+            title: "Sekar Industries Logo"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "logic-softlogo",
+            title: "Logic Soft Logo"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "evergreen",
+            title: "Evergreen Card"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "logicsoft",
+            title: "Logic Soft Card"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "alpha",
+            title: "Alpha Tech Card"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "tariffcard",
+            title: "Premier Tariff Card"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "uidesign",
+            title: "Mobile UI Deign"
         },
         {
-            image: "7",
-            title: "Butterfly"
+            image: "ui-login",
+            title: "Mobile UI Login"
         },
+        {
+            image: "uimenu",
+            title: "UI List Menu"
+        },
+        {
+            image: "ui-roundmenu",
+            title: "UI Round Menu"
+        },
+        {
+            image: "map1",
+            title: "Route Map"
+        },
+        {
+            image: "map2",
+            title: "Route Map"
+        }
     ];
 
 
